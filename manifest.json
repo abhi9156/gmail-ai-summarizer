@@ -10,8 +10,6 @@
       "matches": ["https://mail.google.com/*"],
       "js": ["content.js"]
     }
-  ],
-  "icons": {
-    "128": "icon.png"
-  }
+  ]
 }
+
