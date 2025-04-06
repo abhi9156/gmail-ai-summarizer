@@ -2,14 +2,15 @@
   "manifest_version": 3,
   "name": "Gmail AI Summarizer",
   "version": "1.0",
-  "description": "Summarize Gmail emails using AI",
-  "permissions": ["scripting", "activeTab"],
-  "host_permissions": ["https://mail.google.com/"],
-  "content_scripts": [
-    {
-      "matches": ["https://mail.google.com/*"],
-      "js": ["content.js"]
+  "description": "Summarizes Gmail emails using AI",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
     }
-  ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
 }
-
