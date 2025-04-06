@@ -23,7 +23,7 @@ function waitForEmailAndInjectButton() {
       button.onclick = async () => {
         button.innerText = "Summarizing...";
         try {
-          const response = await fetch("https://YOUR_BACKEND_URL/summarize", {
+          const response = await fetch("https://gmail-ai-summarizer-backend-bxir.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email: emailBody.innerText })
